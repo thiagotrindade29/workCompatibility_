@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "titulo": "Desenvolvedor Front-end Júnior",
+    "empresa": "TechStart",
+    "descricao": "Desenvolvimento de interfaces web responsivas e acessíveis.",
+    "habilidades": ["html", "css", "javascript", "git"]
+  },
+  {
+    "id": 2,
+    "titulo": "Desenvolvedor JavaScript",
+    "empresa": "WebLab",
+    "descricao": "Criação de funcionalidades e integrações para aplicações web.",
+    "habilidades": ["javascript", "dom", "fetch", "git"]
+  },
+  {
+    "id": 3,
+    "titulo": "Pessoa Desenvolvedora React Júnior",
+    "empresa": "Nuvem Digital",
+    "descricao": "Construção de componentes reutilizáveis para produtos digitais.",
+    "habilidades": ["html", "css", "javascript", "react"]
+  },
+  {
+    "id": 4,
+    "titulo": "Analista de Qualidade Web",
+    "empresa": "Quality First",
+    "descricao": "Planejamento de testes e garantia da qualidade de aplicações web.",
+    "habilidades": ["testes", "javascript", "git", "acessibilidade"]
+  }
+]
