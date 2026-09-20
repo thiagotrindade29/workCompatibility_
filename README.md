@@ -1,4 +1,4 @@
-# SkillMatch
+# workCompatibility
 
 Aplicação web educacional que compara as habilidades de uma pessoa com um catálogo de vagas, mostra a porcentagem de compatibilidade e sugere o próximo assunto a estudar.
 
@@ -55,10 +55,10 @@ O motor contém somente regras de negócio. Ele não procura elementos da págin
 
 `normalizarHabilidade` remove espaços nas pontas e converte o texto para minúsculas. `normalizarHabilidades` usa `map` para aplicar essa transformação, `filter(Boolean)` para remover itens vazios e `Set` para eliminar repetições.
 
-Assim, ` HTML, css , JAVASCRIPT, html ` vira:
+Assim, `HTML, css , JAVASCRIPT, html` vira:
 
 ```javascript
-["html", "css", "javascript"]
+["html", "css", "javascript"];
 ```
 
 ### 3.2 Classes `Vaga` e `VagaFrontEnd`
@@ -142,7 +142,7 @@ Os testes verificam normalização, remoção de duplicatas, 0%, 50%, 100%, habi
 
 1. Inicie o servidor e abra a página.
 2. Envie o formulário vazio e confirme que o foco vai para **Nome**.
-3. Preencha: nome `Ana`, área `Desenvolvimento Front-end`, experiência `Júnior` e habilidades ` HTML, css , JAVASCRIPT `.
+3. Preencha: nome `Ana`, área `Desenvolvimento Front-end`, experiência `Júnior` e habilidades `HTML, css , JAVASCRIPT`.
 4. Confirme quatro cards, percentuais, habilidades encontradas/faltantes e o selo **Melhor combinação**.
 5. Recarregue e confira se o perfil reaparece.
 6. Clique em **Limpar perfil salvo** e recarregue para confirmar a remoção.
@@ -150,37 +150,3 @@ Os testes verificam normalização, remoção de duplicatas, 0%, 50%, 100%, habi
 8. Teste larguras de 320, 375, 768, 1024 e 1440 px nas ferramentas do navegador.
 9. Para testar o estado vazio, guarde uma cópia de `vagas.json`, substitua temporariamente seu conteúdo por `[]`, recarregue e depois restaure.
 10. Para testar erro, altere temporariamente o caminho em `dados.js`, recarregue e depois desfaça a alteração.
-
-## 10. Continuando o catálogo
-
-Para acrescentar uma vaga, inclua um objeto em `assets/data/vagas.json` com ID único:
-
-```json
-{
-  "id": 5,
-  "titulo": "Nome da vaga",
-  "empresa": "Nome da empresa",
-  "descricao": "Descrição breve.",
-  "habilidades": ["habilidade 1", "habilidade 2"]
-}
-```
-
-Não é necessário editar o HTML: os cards são gerados automaticamente por `ui.js`.
-
-## 11. Checklist de entrega
-
-- [x] Quatro vagas carregadas do JSON
-- [x] Classes, herança, `map`, `filter` e `reduce`
-- [x] Callback e closure
-- [x] Formulário com validação acessível
-- [x] Cards dinâmicos e melhor vaga destacada
-- [x] Recomendação de estudo
-- [x] Estados de carregamento, vazio e erro
-- [x] Perfil persistido no navegador
-- [x] Layout responsivo e foco visível
-- [x] Testes automatizados do motor
-- [ ] Executar Lighthouse e registrar os resultados
-- [ ] Adicionar screenshots e link publicado
-- [ ] Atualizar Trello e preparar vídeo de apresentação
-
-Os três últimos itens dependem da publicação e das contas externas do autor do projeto.
