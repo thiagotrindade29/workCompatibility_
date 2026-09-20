@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Compare suas habilidades com vagas de tecnologia e descubra o que estudar.">
+  <meta name="theme-color" content="#4338ca">
+  <title>Work Compatibility | Encontre a vaga que combina com você</title>
+  <link rel="icon" href="./assets/img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/styles/index.style.css">
+</head>
+
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+  <header class="cabecalho">
+    <div class="limite cabecalho__conteudo">
+      <img src="./assets/img/logo.svg" width="48" height="48" alt="">
+      <div>
+        <p class="marca">Work Compatibility</p>
+        <p class="slogan">Habilidades certas. Próximo passo claro.</p>
+      </div>
+    </div>
+  </header>
+  <nav class="navegacao" aria-label="Navegação principal">
+    <div class="limite"><a href="#perfil">Meu perfil</a><a href="#vagas">Resultados</a><a href="#recomendacao">Plano de
+        estudo</a></div>
+  </nav>
+  <main id="conteudo" class="limite">
+    <section id="perfil" class="painel" aria-labelledby="titulo-perfil">
+      <div class="secao-cabecalho">
+        <p class="etiqueta">Comece por aqui</p>
+        <h1 id="titulo-perfil">Descubra sua compatibilidade profissional</h1>
+        <p>Conte um pouco sobre você. Separe as habilidades por vírgulas.</p>
+      </div>
+      <form id="formulario-perfil" novalidate>
+        <div class="campo"><label for="nome">Nome</label><input id="nome" name="nome" type="text" autocomplete="name"
+            minlength="2" required></div>
+        <div class="grade-campos">
+          <div class="campo"><label for="area">Área profissional</label><select id="area" name="area" required>
+              <option value="">Selecione</option>
+              <option>Desenvolvimento Front-end</option>
+              <option>Desenvolvimento Back-end</option>
+              <option>Qualidade e Testes</option>
+              <option>Outra área de Tecnologia</option>
+            </select></div>
+          <div class="campo"><label for="experiencia">Nível de experiência</label><select id="experiencia"
+              name="experiencia" required>
+              <option value="">Selecione</option>
+              <option>Iniciante</option>
+              <option>Júnior</option>
+              <option>Pleno</option>
+              <option>Sênior</option>
+            </select></div>
+        </div>
+        <div class="campo"><label for="habilidades">Habilidades</label><input id="habilidades" name="habilidades"
+            type="text" placeholder="Ex.: HTML, CSS, JavaScript, Git" aria-describedby="ajuda-habilidades"
+            required><small id="ajuda-habilidades">Maiúsculas e espaços não alteram o resultado.</small></div>
+        <div class="acoes"><button class="botao botao--primario" type="submit">Analisar meu perfil</button><button
+            id="limpar-perfil" class="botao botao--secundario" type="button">Limpar perfil salvo</button></div>
+      </form>
+      <p id="mensagem" class="mensagem" role="status" aria-live="polite"></p>
+    </section>
+    <section class="painel" aria-labelledby="titulo-resumo">
+      <div class="secao-cabecalho">
+        <p class="etiqueta">Seu perfil</p>
+        <h2 id="titulo-resumo">Resumo do candidato</h2>
+      </div>
+      <div id="resumo-candidato" class="estado-vazio">
+        <p>Seu resumo aparecerá aqui após a análise.</p>
+      </div>
+    </section>
+    <section id="vagas" aria-labelledby="titulo-vagas">
+      <div class="secao-cabecalho">
+        <p class="etiqueta">Comparação</p>
+        <h2 id="titulo-vagas">Vagas recomendadas</h2>
+      </div>
+      <div id="lista-vagas" class="vagas-lista"></div>
+    </section>
+    <section id="recomendacao" class="painel painel--destaque" aria-labelledby="titulo-recomendacao">
+      <div>
+        <p class="etiqueta">Próximo passo</p>
+        <h2 id="titulo-recomendacao">Recomendação de estudo</h2>
+      </div>
+      <p id="texto-recomendacao">Envie o formulário para descobrir o melhor próximo passo.</p>
+    </section>
+  </main>
+  <footer class="rodape">
+    <p>Work Compatibility — projeto educacional de compatibilidade profissional.</p>
+  </footer>
+  <script type="module" src="./assets/scripts/main.js"></script>
+</body>
+
+</html>
