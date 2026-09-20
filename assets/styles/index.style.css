@@ -1,0 +1,61 @@
+:root { --primaria:#4338ca; --primaria-escura:#312e81; --primaria-clara:#eef2ff; --texto:#172033; --texto-suave:#5b6475; --fundo:#f5f7fb; --superficie:#fff; --borda:#d9dfeb; --sucesso:#087a55; --erro:#b42318; --sombra:0 12px 35px rgb(30 41 59 / 9%); --raio:1rem; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; color:var(--texto); background:var(--fundo); font:1rem/1.6 system-ui,-apple-system,"Segoe UI",sans-serif; }
+button,input,select { font:inherit; }
+a { color:inherit; }
+.limite { width:min(100% - 2rem,72rem); margin-inline:auto; }
+.pular-conteudo { position:fixed; top:-5rem; left:1rem; z-index:10; padding:.75rem 1rem; background:white; }
+.pular-conteudo:focus { top:1rem; }
+.cabecalho { color:white; background:linear-gradient(135deg,var(--primaria-escura),var(--primaria)); }
+.cabecalho__conteudo { display:flex; align-items:center; gap:.9rem; min-height:7rem; }
+.marca { margin:0; font-size:1.5rem; font-weight:800; letter-spacing:-.03em; }
+.slogan { margin:-.2rem 0 0; color:#dbeafe; }
+.navegacao { position:sticky; top:0; z-index:5; border-bottom:1px solid var(--borda); background:rgb(255 255 255 / 94%); backdrop-filter:blur(10px); }
+.navegacao .limite { display:flex; gap:1.25rem; overflow-x:auto; }
+.navegacao a { padding:.9rem 0; font-weight:650; text-decoration:none; white-space:nowrap; }
+.navegacao a:hover { color:var(--primaria); }
+main { padding-block:2rem 4rem; }
+section { scroll-margin-top:5rem; margin-bottom:2rem; }
+.painel { padding:clamp(1.25rem,4vw,2rem); border:1px solid var(--borda); border-radius:var(--raio); background:var(--superficie); box-shadow:var(--sombra); }
+.secao-cabecalho { margin-bottom:1.25rem; }
+.secao-cabecalho > :last-child { color:var(--texto-suave); }
+.etiqueta { margin:0 0 .25rem; color:var(--primaria); font-size:.78rem; font-weight:800; letter-spacing:.1em; text-transform:uppercase; }
+h1,h2,h3 { margin:0 0 .5rem; line-height:1.2; }
+h1 { font-size:clamp(1.8rem,6vw,3rem); letter-spacing:-.04em; }
+h2 { font-size:clamp(1.45rem,4vw,2rem); }
+p { margin-block:.4rem 1rem; }
+.campo { display:grid; gap:.35rem; margin-bottom:1rem; }
+label { font-weight:700; }
+input,select { width:100%; min-height:3rem; padding:.7rem .8rem; color:var(--texto); border:1px solid #aeb7c7; border-radius:.6rem; background:white; }
+small,.texto-secundario { color:var(--texto-suave); }
+.acoes { display:flex; flex-wrap:wrap; gap:.75rem; margin-top:1.5rem; }
+.botao { min-height:3rem; padding:.7rem 1rem; border:2px solid var(--primaria); border-radius:.65rem; cursor:pointer; font-weight:750; }
+.botao--primario { color:white; background:var(--primaria); }
+.botao--primario:hover { background:var(--primaria-escura); }
+.botao--secundario { color:var(--primaria); background:white; }
+.mensagem { min-height:1.6rem; margin:1rem 0 0; padding:.7rem 0 0; font-weight:650; }
+.mensagem--erro { color:var(--erro); }
+.mensagem--sucesso { color:var(--sucesso); }
+.estado-vazio { color:var(--texto-suave); }
+.vagas-lista { display:grid; gap:1rem; }
+.vaga-card { position:relative; padding:1.25rem; border:1px solid var(--borda); border-radius:var(--raio); background:var(--superficie); box-shadow:var(--sombra); }
+.vaga-card--melhor { border:2px solid var(--primaria); }
+.vaga-card__empresa { color:var(--primaria); font-weight:700; }
+.selo { display:inline-block; margin-bottom:.8rem; padding:.25rem .6rem; color:var(--primaria-escura); border-radius:999px; background:var(--primaria-clara); font-size:.78rem; font-weight:800; }
+.compatibilidade { padding:.6rem .75rem; border-radius:.55rem; font-weight:800; }
+.compatibilidade--alta { color:#05603f; background:#dcfae6; }
+.compatibilidade--media { color:#854a0e; background:#fef0c7; }
+.compatibilidade--baixa { color:#912018; background:#fee4e2; }
+.habilidades-grupo { margin-top:1rem; }
+.habilidades { display:flex; flex-wrap:wrap; gap:.4rem; margin:.4rem 0 0; padding:0; list-style:none; }
+.habilidades li { padding:.2rem .55rem; border-radius:999px; background:#edf0f5; font-size:.88rem; }
+.habilidades--encontradas li { color:#05603f; background:#dcfae6; }
+.habilidades--faltantes li { color:#854a0e; background:#fef0c7; }
+.painel--destaque { display:grid; gap:1rem; color:white; border:0; background:linear-gradient(135deg,var(--primaria-escura),var(--primaria)); }
+.painel--destaque .etiqueta { color:#c7d2fe; }
+.rodape { padding:1.5rem 1rem; color:var(--texto-suave); text-align:center; }
+:focus-visible { outline:.2rem solid #f59e0b; outline-offset:.2rem; }
+@media (min-width:42rem) { .grade-campos,.vagas-lista { display:grid; grid-template-columns:repeat(2,1fr); gap:1rem; } .painel--destaque { grid-template-columns:1fr 1.35fr; align-items:center; } }
+@media (min-width:68rem) { .vagas-lista { grid-template-columns:repeat(3,1fr); } }
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
