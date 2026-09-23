@@ -150,3 +150,11 @@ Os testes verificam normalização, remoção de duplicatas, 0%, 50%, 100%, habi
 8. Teste larguras de 320, 375, 768, 1024 e 1440 px nas ferramentas do navegador.
 9. Para testar o estado vazio, guarde uma cópia de `vagas.json`, substitua temporariamente seu conteúdo por `[]`, recarregue e depois restaure.
 10. Para testar erro, altere temporariamente o caminho em `dados.js`, recarregue e depois desfaça a alteração.
+
+## 10. Video apresentação
+
+[![Demonstração do Projeto](./assets/img/apresetacao.png)](https://drive.google.com/drive/folders/14JOW1Ea6fwi04ouNhJnwINLbdCzuE6pY?usp=sharing)
+
+## 11. Trello
+
+[![TRELLO](./assets/img/trello.png)](https://trello.com/b/O3KvGInK/workcompatibility)
